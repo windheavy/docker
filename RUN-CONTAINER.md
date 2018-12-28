@@ -23,5 +23,14 @@ KiB Swap:  1048572 total,   955416 free,    93156 used.   403704 avail Mem
 ```
 
 `docker container ls`は実行中のコンテナを表示
-`docker container exec -it [ubuntu CONTAINER ID] bash`でubuntuのbashを起動
+`docker container exec -it [ubuntu's CONTAINER ID] bash`でubuntuのbashを起動
  
+Stop the containers by running this command for each container in the list:
+
+`$ docker container stop [container id]`
+
+You can also use the names of the containers that you specified before:
+
+`$ docker container stop [container id's first 3 alphabet] ead af5`
+
+`$ docker system prune`停止中の全てのコンテナがremoveされる
